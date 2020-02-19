@@ -17,7 +17,8 @@ function authenticate(name, password) {
 }
 
 function describe(user) {
-  return sleepSome().then(() => "@" + user.userName + " (" + user.name + ")")
+  return sleepSome().then(() => 
+    "@" + user.userName + " (" + user.name + ")")
 }
 
 module.exports = { authenticate, describe }
